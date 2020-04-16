@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Socialmedia from "./components/Socialmedia";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

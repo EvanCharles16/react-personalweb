@@ -14,7 +14,7 @@ class Navbars extends Component {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="nav ml-auto mr-5 ">
-              <Link to="/" className="text-light pl-4">
+              <Link to="/" className="active text-light pl-4">
                 Home
               </Link>
               <Link to="/about" className="text-light pl-4">

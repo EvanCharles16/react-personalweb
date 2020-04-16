@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { Container, Row, Col, ListGroup, Form, Button } from "react-bootstrap";
+import Cv from "../img/CV.png";
 
 class Contact extends Component {
   render() {
     return (
       <div>
         <Container>
+          <div className="mt-4 mb-4" id="getCV">
+            <img src={Cv} alt="CV" style={{ width: "100%" }} />
+          </div>
           <Row>
             <Col className="bordered border-right">
               <Row>

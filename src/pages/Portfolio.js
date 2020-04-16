@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
-import foto2 from "../img/2.png";
+import pfoto from "../img/6.png";
+import "./Portfolio.css";
 
 class Portfolio extends Component {
   render() {
     return (
-      <div className="bg-light mb-4">
+      <div className="mb-4">
         <Container>
-          <div className="portfolio m-5 pt-5">
+          <div className="portfolio m-5 pt-3 text-center">
             <h1>Portfolio</h1>
           </div>
 
@@ -16,7 +17,7 @@ class Portfolio extends Component {
               <div id="portfolio">
                 <CardDeck>
                   <Card>
-                    <Card.Img variant="top" src={foto2} />
+                    <Card.Img variant="top" src={pfoto} />
                     <Card.Body>
                       <Card.Title>Card title</Card.Title>
                       <Card.Text>
@@ -27,7 +28,7 @@ class Portfolio extends Component {
                     </Card.Body>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src={foto2} />
+                    <Card.Img variant="top" src={pfoto} />
                     <Card.Body>
                       <Card.Title>Card title</Card.Title>
                       <Card.Text>
@@ -37,7 +38,7 @@ class Portfolio extends Component {
                     </Card.Body>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src={foto2} />
+                    <Card.Img variant="top" src={pfoto} />
                     <Card.Body>
                       <Card.Title>Card title</Card.Title>
                       <Card.Text>
@@ -57,7 +58,7 @@ class Portfolio extends Component {
             <Col>
               <CardDeck>
                 <Card>
-                  <Card.Img variant="top" src={foto2} />
+                  <Card.Img variant="top" src={pfoto} />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -68,7 +69,7 @@ class Portfolio extends Component {
                   </Card.Body>
                 </Card>
                 <Card>
-                  <Card.Img variant="top" src={foto2} />
+                  <Card.Img variant="top" src={pfoto} />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -78,7 +79,7 @@ class Portfolio extends Component {
                   </Card.Body>
                 </Card>
                 <Card>
-                  <Card.Img variant="top" src={foto2} />
+                  <Card.Img variant="top" src={pfoto} />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>

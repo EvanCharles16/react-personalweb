@@ -1,0 +1,7 @@
+.icon a {
+  color: black;
+}
+
+.icon a:hover {
+  color: blue;
+}
