@@ -7,7 +7,7 @@ class Socialmedia extends Component {
     return (
       <div className="bg-light p-3 mt-4 icon">
         <Container>
-          <Row className="m-5">
+          <Row className="ml-5 mt-3 pl-5">
             <Col>
               <a href="https://www.facebook.com/" target="blank">
                 <i class="fa fa-facebook fa-3x"></i>
