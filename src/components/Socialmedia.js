@@ -10,22 +10,22 @@ class Socialmedia extends Component {
           <Row className="ml-5 mt-3 pl-5">
             <Col>
               <a href="https://www.facebook.com/" target="blank">
-                <i class="fa fa-facebook fa-3x"></i>
+                <i className="fa fa-facebook fa-3x"></i>
               </a>
             </Col>
             <Col>
               <a href="https://www.twitter.com/" target="blank">
-                <i class="fa fa-twitter fa-3x"></i>
+                <i className="fa fa-twitter fa-3x"></i>
               </a>
             </Col>
             <Col>
               <a href="https://www.whatsapp.com/" target="blank">
-                <i class="fa fa-whatsapp fa-3x"></i>
+                <i className="fa fa-whatsapp fa-3x"></i>
               </a>
             </Col>
             <Col>
               <a href="https://www.linkedin.com/" target="blank">
-                <i class="fa fa-linkedin fa-3x"></i>
+                <i className="fa fa-linkedin fa-3x"></i>
               </a>
             </Col>
           </Row>

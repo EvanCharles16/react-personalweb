@@ -20,6 +20,9 @@ class Navbars extends Component {
               <Link to="/about" className="text-light pl-4">
                 About
               </Link>
+              <Link to="/article" className="text-light pl-4">
+                Article
+              </Link>
               <Link to="/portfolio" className="text-light pl-4">
                 Portfolio
               </Link>

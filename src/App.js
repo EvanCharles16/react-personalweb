@@ -4,6 +4,8 @@ import "./App.css";
 import Navbars from "./components/Navbars";
 import Content from "./pages/Content";
 import About from "./pages/About";
+import Article from "./pages/Detail/Article";
+import Detail from "./pages/Detail/Detail";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Socialmedia from "./components/Socialmedia";
@@ -15,10 +17,12 @@ function App() {
     <Router>
       <Navbars />
       <Switch>
-        <Route exact path="/" component={Content}></Route>
-        <Route path="/about" component={About}></Route>
-        <Route path="/portfolio" component={Portfolio}></Route>
-        <Route path="/contact" component={Contact}></Route>
+        <Route exact path="/" component={Content} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/article" component={Article} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/article/:id" component={Detail} />
       </Switch>
       <Socialmedia />
     </Router>
