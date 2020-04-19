@@ -5,25 +5,25 @@ import "./Socialmedia.css";
 class Socialmedia extends Component {
   render() {
     return (
-      <div className="bg-light p-3 mt-4 icon">
+      <div className="bg-light p-3 mt-4 sticky-bottom icon">
         <Container>
           <Row className="ml-5 mt-3 pl-5">
-            <Col>
+            <Col md={3} sm={6}>
               <a href="https://www.facebook.com/" target="blank">
                 <i className="fa fa-facebook fa-3x"></i>
               </a>
             </Col>
-            <Col>
+            <Col md={3} sm={6}>
               <a href="https://www.twitter.com/" target="blank">
                 <i className="fa fa-twitter fa-3x"></i>
               </a>
             </Col>
-            <Col>
+            <Col md={3} sm={6}>
               <a href="https://www.whatsapp.com/" target="blank">
                 <i className="fa fa-whatsapp fa-3x"></i>
               </a>
             </Col>
-            <Col>
+            <Col md={3} sm={6}>
               <a href="https://www.linkedin.com/" target="blank">
                 <i className="fa fa-linkedin fa-3x"></i>
               </a>

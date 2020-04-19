@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, ListGroup, Form, Button } from "react-bootstrap";
-import Cv from "../img/CV.png";
+import Cv from "../../img/CV.png";
 
 class Contact extends Component {
   render() {
@@ -29,9 +29,9 @@ class Contact extends Component {
 
                 <Col>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>+628 122 213</ListGroup.Item>
+                    <ListGroup.Item>+628 956 274 36758</ListGroup.Item>
                     <ListGroup.Item>evan.chrls@yahoo.com</ListGroup.Item>
-                    <ListGroup.Item>www.ec.com</ListGroup.Item>
+                    <ListGroup.Item>ec@vannch.com</ListGroup.Item>
                     <ListGroup.Item>Ruang Kreasi</ListGroup.Item>
                   </ListGroup>
                 </Col>

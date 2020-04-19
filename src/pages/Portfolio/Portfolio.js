@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
-import pfoto from "../img/6.png";
+import pfoto from "../../img/6.png";
 import "./Portfolio.css";
 
 class Portfolio extends Component {

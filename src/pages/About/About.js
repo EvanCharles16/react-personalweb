@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
-import foto2 from "../img/3.png";
+import foto2 from "../../img/3.png";
 
 class About extends Component {
   render() {
@@ -8,12 +8,12 @@ class About extends Component {
       <div>
         <Container>
           <Row>
-            <Col>
+            <Col md={6} sm={12}>
               <div id="about">
                 <img src={foto2} alt="foto" style={{ width: "100%" }} />
               </div>
             </Col>
-            <Col>
+            <Col md={6} sm={12}>
               <h1 className="mt-5 mb-4">About Me</h1>
               <h3 className="ml-4 pt-5 text-left">My name is Evan Charles</h3>
               <h3>

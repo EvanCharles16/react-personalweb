@@ -9,7 +9,7 @@ class Navbars extends Component {
       <div>
         <Navbar bg="primary" expand="lg">
           <Navbar.Brand href="/" className="logo ml-5 text-light">
-            <h1>Evan Charles</h1>
+            <h3>Evan Charles</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
@@ -20,9 +20,9 @@ class Navbars extends Component {
               <Link to="/about" className="text-light pl-4">
                 About
               </Link>
-              <Link to="/article" className="text-light pl-4">
+              {/* <Link to="/article" className="text-light pl-4">
                 Article
-              </Link>
+              </Link> */}
               <Link to="/portfolio" className="text-light pl-4">
                 Portfolio
               </Link>

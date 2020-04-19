@@ -1,23 +1,31 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Jumbotron } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import foto from "../img/4.png";
+import foto from "../../img/4.png";
+import "./Content.css";
 
 class Content extends Component {
   render() {
     return (
-      <div className="mt-5 pt-5 pb-5">
+      <div className="container mt-3 pt-3 pb-5">
         <Container>
           <Row>
             <Col>
               <div
                 id="content"
                 className="pt-5 mt-5"
-                style={{ textAlign: "justify" }}
+                style={{ textAlign: "left" }}
               >
                 <h2>Hello ---------</h2>
                 <h1>I am Evan Charles</h1>
                 <h4>Fullstack Developer</h4>
+
+                <Link to="/about" className="text-light pl-4">
+                  <Button variant="outline-success mr-3 mt-3 mb-3">
+                    Know more..
+                  </Button>
+                </Link>
+                <br />
 
                 <Link to="/contact" className="text-light pl-4">
                   <Button variant="primary mr-3 mt-3">Hire Me</Button>
@@ -27,8 +35,9 @@ class Content extends Component {
                 </Link>
               </div>
             </Col>
+
             <Col>
-              <img src={foto} alt="foto" style={{ width: "100%" }} />
+              <img className="images mb-5 pb-5" src={foto} alt="foto" />
             </Col>
           </Row>
         </Container>
