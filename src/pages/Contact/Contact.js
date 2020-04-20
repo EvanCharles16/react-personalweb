@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, ListGroup, Form, Button } from "react-bootstrap";
+import Socialmedia from "../../components/Footer/Socialmedia";
 import Cv from "../../img/CV.png";
 
 class Contact extends Component {
@@ -69,6 +70,7 @@ class Contact extends Component {
             </Col>
           </Row>
         </Container>
+        <Socialmedia />
       </div>
     );
   }

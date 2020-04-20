@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
+import Socialmedia from "../../components/Footer/Socialmedia";
 import pfoto from "../../img/6.png";
+import glints from "../../img/glints.png";
+import impact from "../../img/Impact.png";
+import udemy from "../../img/udemy.png";
+import progate from "../../img/progate.png";
 import "./Portfolio.css";
 
 class Portfolio extends Component {
@@ -17,7 +22,7 @@ class Portfolio extends Component {
               <div id="portfolio">
                 <CardDeck>
                   <Card>
-                    <Card.Img variant="top" src={pfoto} />
+                    <Card.Img variant="top" src={glints} />
                     <Card.Body>
                       <Card.Title>Card title</Card.Title>
                       <Card.Text>
@@ -28,17 +33,17 @@ class Portfolio extends Component {
                     </Card.Body>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src={pfoto} />
+                    <Card.Img variant="top" src={impact} />
                     <Card.Body>
                       <Card.Title>Card title</Card.Title>
                       <Card.Text>
                         This card has supporting text below as a natural lead-in
-                        to additional content.{" "}
+                        to additional content.
                       </Card.Text>
                     </Card.Body>
                   </Card>
                   <Card>
-                    <Card.Img variant="top" src={pfoto} />
+                    <Card.Img variant="top" src={udemy} />
                     <Card.Body>
                       <Card.Title>Card title</Card.Title>
                       <Card.Text>
@@ -69,7 +74,7 @@ class Portfolio extends Component {
                   </Card.Body>
                 </Card>
                 <Card>
-                  <Card.Img variant="top" src={pfoto} />
+                  <Card.Img variant="top" src={progate} />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -94,6 +99,7 @@ class Portfolio extends Component {
             </Col>
           </Row>
         </Container>
+        <Socialmedia />
       </div>
     );
   }

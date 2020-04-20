@@ -8,7 +8,7 @@ import About from "./pages/About/About";
 // import Detail from "./pages/Detail/Detail";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
-import Socialmedia from "./components/Footer/Socialmedia";
+// import Socialmedia from "./components/Footer/Socialmedia";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
-      <Socialmedia />
+      {/* <Socialmedia /> */}
     </Router>
   );
 }

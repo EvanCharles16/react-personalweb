@@ -1,9 +1,37 @@
-.container {
+.content {
   margin-bottom: 50px;
+  color: white;
+}
+
+#content h1 {
+  font-size: 40px;
+}
+
+#content h2 {
+  font-size: 30px;
+}
+
+#content h4 {
+  font-size: 26px;
+}
+
+#content button {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.background-content {
+  background-image: url(../../img/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 800px;
+  overflow: hidden;
 }
 
 .images {
-  width: 25rem;
+  width: 30rem;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -14,5 +42,13 @@
   .images {
     margin-right: 100px;
     width: 300px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .images {
+    width: 30rem;
+    margin-left: 180px;
+    margin-top: 70px;
   }
 }
