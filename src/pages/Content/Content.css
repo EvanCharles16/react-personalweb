@@ -1,54 +1,35 @@
-.content {
-  margin-bottom: 50px;
-  color: white;
-}
-
-#content h1 {
-  font-size: 40px;
-}
-
-#content h2 {
-  font-size: 30px;
-}
-
-#content h4 {
-  font-size: 26px;
-}
-
-#content button {
-  font-size: 26px;
-  font-weight: 500;
-}
-
 .background-content {
   background-image: url(../../img/image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
-  max-height: 800px;
+  max-height: 914px;
   overflow: hidden;
 }
 
-.images {
-  width: 30rem;
+.me {
+  position: relative;
+  border-radius: 40%;
+  border: 8px solid white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 22rem;
+  width: 22rem;
+  margin-top: 5rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-  .images {
-    margin-right: 100px;
-    width: 300px;
-  }
+.fa-facebook,
+.fa-twitter,
+.fa-whatsapp,
+.fa-linkedin {
+  color: white;
+  font-size: 2rem;
+  margin: 10px;
 }
 
-@media (min-width: 1281px) {
-  .images {
-    width: 30rem;
-    margin-left: 180px;
-    margin-top: 70px;
-  }
+.button-icon {
+  padding: 100%;
 }

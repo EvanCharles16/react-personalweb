@@ -1,49 +1,66 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import foto from "../../img/4.png";
-// import bumi from "../../img/bumi.png";
+import me from "../../img/editt.png";
+// Butuh Edit Hilangin Background foto me
+
 import "./Content.css";
 
 class Content extends Component {
   render() {
     return (
       <div className="background-content">
-        <div className="container content pt-3 pb-5">
-          <Container>
-            <Row>
-              <Col>
-                <div
-                  id="content"
-                  className="pt-5 mt-5"
-                  style={{ textAlign: "left" }}
-                >
-                  <h2>Hello ---------</h2>
-                  <h1>I am Evan Charles</h1>
-                  <h4>Fullstack Developer</h4>
+        <Container>
+          <Row className="text-center">
+            <Col>
+              <img src={me} className="me" />
+              <div className="mt-4 text-white justify-content-center">
+                <h1>I am Evan Charles</h1>
+                <h4>Fullstack Developer</h4>
+              </div>
+            </Col>
+          </Row>
 
-                  <Link to="/about" className="text-light pl-4">
-                    <Button variant="success mr-3 mt-3 mb-3">
-                      Know more...
-                    </Button>
-                  </Link>
-                  <br />
+          <Nav className="justify-content-center mt-3">
+            <Nav.Item className="icons">
+              <Nav.Link href="https://www.facebook.com/" target="blank">
+                <i className="fa fa-facebook fa-2x"></i>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://www.twitter.com" target="blank">
+                <i className="fa fa-twitter fa-2x"></i>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://www.linkedin.com/" target="blank">
+                <i className="fa fa-linkedin fa-2x"></i>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="https://www.whatsapp.com/" target="blank">
+                <i className="fa fa-whatsapp fa-2x"></i>
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
 
-                  <Link to="/contact" className="text-light pl-4">
-                    <Button variant="primary mr-3 mt-3">Hire Me</Button>
-                  </Link>
-                  <Link to="/contact" className="text-light pl-4">
-                    <Button variant="primary mt-3">Get CV</Button>
-                  </Link>
-                </div>
-              </Col>
-
-              <Col>
-                <img className="images mb-5 pb-5" src={foto} alt="foto" />
-              </Col>
-            </Row>
-          </Container>
-        </div>
+          <div className="text-center mt-4">
+            <Link to="/contact" className="text-light pl-4">
+              <Button
+                className="text-center"
+                variant="primary mt-3 p-3"
+                size="lg"
+              >
+                Hire Me
+              </Button>
+            </Link>
+            <Link to="/contact" className="text-light pl-4">
+              <Button variant="primary mt-3 p-3" size="lg">
+                Get CV
+              </Button>
+            </Link>
+          </div>
+        </Container>
       </div>
     );
   }

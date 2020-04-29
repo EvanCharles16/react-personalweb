@@ -18,9 +18,9 @@ class About extends Component {
               </div>
             </Col>
             <Col md={7} sm={12} className="text mt-3">
-              <h3 className="ml-4 pt-5 mt-3 text-left">
-                My name is Evan Charles
-              </h3>
+              <h2 className="ml-4 pt-5 mt-3 text-left">
+                My Name is Evan Charles
+              </h2>
               <h3>
                 <h3 className="ml-4 pt-3 text-left">
                   I am a simple, creative, enthusiastic and fun-loving person. I

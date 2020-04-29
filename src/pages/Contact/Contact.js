@@ -31,8 +31,8 @@ class Contact extends Component {
                 <Col>
                   <ListGroup variant="flush">
                     <ListGroup.Item>+628 956 274 36758</ListGroup.Item>
-                    <ListGroup.Item>evan.chrls@yahoo.com</ListGroup.Item>
                     <ListGroup.Item>ec@vannch.com</ListGroup.Item>
+                    <ListGroup.Item>vannch.com</ListGroup.Item>
                     <ListGroup.Item>Ruang Kreasi</ListGroup.Item>
                   </ListGroup>
                 </Col>
