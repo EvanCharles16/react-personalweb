@@ -13,17 +13,17 @@ class Socialmedia extends Component {
 								href="https://www.facebook.com/evan.charles.988711/"
 								target="blank"
 							>
-								<i className="fa fa-facebook fa-2x icons"></i>
+								<i className="fab fa-facebook fa-2x icons"></i>
 							</a>
 						</Col>
 						<Col md={3} sm={6}>
 							<a href="https://github.com/EvanCharles16" target="blank">
-								<i className="fa fa-github fa-2x icons"></i>
+								<i className="fab fa-github fa-2x icons"></i>
 							</a>
 						</Col>
 						<Col md={3} sm={6}>
 							<a href="https://wa.me/0895627436758" target="blank">
-								<i className="fa fa-whatsapp fa-2x icons"></i>
+								<i className="fab fa-whatsapp fa-2x icons"></i>
 							</a>
 						</Col>
 						<Col md={3} sm={6}>
@@ -31,7 +31,7 @@ class Socialmedia extends Component {
 								href="https://www.linkedin.com/in/evan-charles-6385971a7/"
 								target="blank"
 							>
-								<i className="fa fa-linkedin fa-2x icons"></i>
+								<i className="fab fa-linkedin fa-2x icons"></i>
 							</a>
 						</Col>
 					</Row>

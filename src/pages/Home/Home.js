@@ -21,23 +21,23 @@ class Content extends Component {
 					</Row>
 
 					<Nav className="justify-content-center mt-3">
-						<Nav.Item className="icons">
+						<Nav.Item>
 							<Nav.Link
 								href="https://www.facebook.com/evan.charles.988711/"
 								target="blank"
 							>
-								<i className="fa fa-facebook fa-2x"></i>
+								<i className="fab fa-facebook "></i>
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
 							<Nav.Link href="https://github.com/EvanCharles16" target="blank">
-								<i className="fa fa-github fa-2x"></i>
+								<i className="fab fa-github "></i>
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
 							<Nav.Link href="https://wa.me/0895627436758" target="blank">
-								<i className="fa fa-whatsapp fa-2x"></i>
+								<i className="fab fa-whatsapp "></i>
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
@@ -45,7 +45,7 @@ class Content extends Component {
 								href="https://www.linkedin.com/in/evan-charles-6385971a7/"
 								target="blank"
 							>
-								<i className="fa fa-linkedin fa-2x"></i>
+								<i className="fab fa-linkedin "></i>
 							</Nav.Link>
 						</Nav.Item>
 					</Nav>

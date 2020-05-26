@@ -94,53 +94,60 @@ class About extends Component {
 
 					<hr className="mt-5" />
 
-					<Row className="mb-4">
-						<Col>
-							<div id="portfolio">
-								<div className="services text-center mb-5 mt-4">
-									<h1>Services</h1>
-								</div>
-								<CardDeck className="text-center">
-									<Card>
-										<Card.Img variant="top" />
-										<i class="fa fa-book fa-4x"></i>
-										<Card.Body>
-											<Card.Title>Documentation</Card.Title>
-											<Card.Text>
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a
-												little bit longer.
-											</Card.Text>
-										</Card.Body>
-									</Card>
-									<Card>
-										<Card.Img variant="top" />
-										<i class="fa fa-mobile fa-5x"></i>
-										<Card.Body>
-											<Card.Title>Mobile Develop</Card.Title>
-											<Card.Text>
-												This card has supporting text below as a natural lead-in
-												to additional content.{" "}
-											</Card.Text>
-										</Card.Body>
-									</Card>
-									<Card>
-										<Card.Img variant="top" />
-										<i class="fa fa-desktop fa-4x"></i>
-										<Card.Body>
-											<Card.Title>Web Develop</Card.Title>
-											<Card.Text>
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This card has
-												even longer content than the first to show that equal
-												height action.
-											</Card.Text>
-										</Card.Body>
-									</Card>
-								</CardDeck>
+					<div className="mb-4">
+						<div id="portfolio">
+							<div className="services text-center mb-5 mt-4">
+								<h1 className="skillText">My Ability</h1>
 							</div>
-						</Col>
-					</Row>
+
+							<CardDeck className="text-center ">
+								<Card>
+									<Card.Img variant="top" />
+									<i className="fas fa-laptop-code fa-4x mt-4"></i>
+									<Card.Body>
+										<Card.Title className="mb-4">Frontend</Card.Title>
+										<h6>HTML5 CSS3 Javascript </h6>
+										<h6>React Bootstrap</h6>
+									</Card.Body>
+								</Card>
+								<Card>
+									<Card.Img variant="top" />
+									<i className="fas fa-code fa-4x mt-4"></i>
+									<Card.Body>
+										<Card.Title className="mb-4">Backend</Card.Title>
+										<Card.Text>Node Express</Card.Text>
+									</Card.Body>
+								</Card>
+							</CardDeck>
+
+							<CardDeck className="text-center mt-4">
+								<Card>
+									<Card.Img variant="top" />
+									<i className="fas fa-database fa-4x mt-4"></i>
+									<Card.Body>
+										<Card.Title className="mb-4">Database</Card.Title>
+										<Card.Text>MongoDB MYSQL</Card.Text>
+									</Card.Body>
+								</Card>
+								<Card>
+									<Card.Img variant="top" />
+									<i className="fas fa-code-branch fa-4x mt-4"></i>
+									<Card.Body>
+										<Card.Title className="mb-4">Version Control</Card.Title>
+										<Card.Text>Git Github</Card.Text>
+									</Card.Body>
+								</Card>
+								<Card>
+									<Card.Img variant="top" />
+									<i className="fas fa-cloud fa-4x mt-4"></i>
+									<Card.Body>
+										<Card.Title className="mb-4">Cloud</Card.Title>
+										<Card.Text>Heroku Netlify</Card.Text>
+									</Card.Body>
+								</Card>
+							</CardDeck>
+						</div>
+					</div>
 				</Container>
 
 				<Socialmedia />

@@ -16,8 +16,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 22rem;
-	width: 22rem;
+	height: 20rem;
+	width: 20rem;
 	margin-top: 5rem;
 }
 
@@ -37,6 +37,7 @@
 	color: white;
 	font-size: 2rem;
 	margin: 10px;
+	border-radius: 50%;
 	box-shadow: 0 0 20px;
 }
 
