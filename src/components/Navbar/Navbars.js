@@ -8,20 +8,17 @@ class Navbars extends Component {
 		return (
 			<div>
 				<Navbar bg="primary" expand="lg">
-					<Navbar.Brand href="/" className="logo ml-5 text-light">
+					<Navbar.Brand className="logo ml-5 text-light">
 						<h3>Evan Charles</h3>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="navbar-nav" className="bg-light" />
 					<Navbar.Collapse id="navbar-nav">
-						<Nav className="nav ml-auto mr-5  ">
+						<Nav className="nav ml-auto mr-2  ">
 							<Link to="/" className=" link text-light pr-3 mr-4">
 								Home
 							</Link>
 							<Link to="/about" className="link text-light pr-3 mr-4">
 								About
-							</Link>
-							<Link to="/project" className="link text-light pr-3 mr-4">
-								Projects
 							</Link>
 							<Link to="/portfolio" className="link text-light pr-3 mr-4">
 								Portfolio

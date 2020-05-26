@@ -16,8 +16,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 20rem;
-	width: 20rem;
+	height: 18rem;
+	width: 18rem;
 	margin-top: 5rem;
 }
 
@@ -43,4 +43,166 @@
 
 .button-icon {
 	padding: 100%;
+}
+
+@media (min-width: 1281px) {
+	.me {
+		position: relative;
+		border-radius: 40%;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 20rem;
+		width: 20rem;
+		margin-top: 5rem;
+	}
+
+	.nameText {
+		font-size: 36px;
+	}
+
+	.statusText {
+		font-size: 24px;
+	}
+
+	.homeButton {
+		padding: 15px !important;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.me {
+		position: relative;
+		border-radius: 40%;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 18rem;
+		width: 18rem;
+		margin-top: 5rem;
+	}
+
+	.nameText {
+		font-size: 30px;
+	}
+
+	.statusText {
+		font-size: 22px;
+	}
+
+	.homeButton {
+		padding: 10px !important;
+	}
+}
+
+/* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.me {
+		position: relative;
+		border-radius: 40%;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 18rem;
+		width: 18rem;
+		margin-top: 5rem;
+	}
+
+	.nameText {
+		font-size: 30px;
+	}
+
+	.statusText {
+		font-size: 22px;
+	}
+
+	.homeButton {
+		padding: 10px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	/* 873 x 872 */
+	.me {
+		position: relative;
+		border-radius: 40%;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 18rem;
+		width: 18rem;
+		margin-top: 5rem;
+	}
+
+	.nameText {
+		font-size: 30px;
+	}
+
+	.statusText {
+		font-size: 22px;
+	}
+
+	.homeButton {
+		padding: 10px !important;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.me {
+		position: relative;
+		border-radius: 40%;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 16rem;
+		width: 16rem;
+		margin-top: 5rem;
+	}
+
+	.nameText {
+		font-size: 30px;
+	}
+
+	.statusText {
+		font-size: 22px;
+	}
+
+	.homeButton {
+		padding: 10px !important;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.me {
+		position: relative;
+		border-radius: 40%;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 14rem;
+		width: 14rem;
+		margin-top: 3rem;
+	}
+
+	.nameText {
+		font-size: 30px;
+	}
+
+	.statusText {
+		font-size: 22px;
+	}
+
+	.homeButton {
+		padding: 10px !important;
+	}
 }

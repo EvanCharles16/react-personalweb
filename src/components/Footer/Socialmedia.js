@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+
 import "./Socialmedia.css";
 
 class Socialmedia extends Component {
@@ -37,7 +38,7 @@ class Socialmedia extends Component {
 					</Row>
 				</Container>
 
-				<h3 className="text-center pt-5">Designed By Me - EvanCharles 2020</h3>
+				<h5 className="text-center pt-5">Designed By Me - EvanCharles 2020</h5>
 			</div>
 		);
 	}

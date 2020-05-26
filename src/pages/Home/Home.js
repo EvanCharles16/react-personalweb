@@ -14,8 +14,8 @@ class Content extends Component {
 						<Col>
 							<img src={me} alt="me" className="me" />
 							<div className="mt-4 text-white justify-content-center">
-								<h1>I am Evan Charles</h1>
-								<h4>Frontend Developer</h4>
+								<h1 className="nameText">I am Evan Charles</h1>
+								<h4 className="statusText">Frontend Developer</h4>
 							</div>
 						</Col>
 					</Row>
@@ -51,10 +51,10 @@ class Content extends Component {
 					</Nav>
 
 					<div className="text-center mt-4">
-						<Link to="/contact" className="text-light pl-4">
+						<Link to="/contact" className="text-light ">
 							<Button
-								className="text-center"
-								variant="primary mt-3 p-3"
+								className="text-center homeButton"
+								variant="primary mt-3"
 								size="lg"
 							>
 								Hire Me
@@ -64,9 +64,9 @@ class Content extends Component {
 							to="/assets/CV.pdf"
 							target="blank"
 							download
-							className="text-light pl-4"
+							className="text-light pl-4 "
 						>
-							<Button variant="primary mt-3 p-3" size="lg">
+							<Button variant="primary mt-3" className="homeButton" size="lg">
 								Get CV
 							</Button>
 						</Link>

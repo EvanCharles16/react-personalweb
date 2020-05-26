@@ -1,11 +1,18 @@
 import React from "react";
-import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
+import {
+	Container,
+	Row,
+	Col,
+	Card,
+	CardDeck,
+	Button,
+	Jumbotron,
+} from "react-bootstrap";
+
 import Socialmedia from "../../components/Footer/Socialmedia";
 import pfoto from "../../img/6.png";
-import glints from "../../img/glints.png";
-import impact from "../../img/Impact.png";
-import udemy from "../../img/udemy.png";
-import progate from "../../img/progate.png";
+import reactweb from "./../../img/portfolio/reactweb.png";
+
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -19,9 +26,9 @@ const Portfolio = () => {
 				<Row className="mb-5">
 					<Col>
 						<div id="portfolio">
-							<CardDeck>
-								<Card className="portfolioCard ml-4">
-									<Card.Img variant="top" src={glints} />
+							<>
+								<Jumbotron className="portfolioCard ml-4">
+									<Card.Img variant="top" src={reactweb} />
 									<Card.Body>
 										<Card.Title>Card title</Card.Title>
 										<Card.Text>
@@ -29,31 +36,47 @@ const Portfolio = () => {
 											natural lead-in to additional content. This content is a
 											little bit longer.
 										</Card.Text>
+										<a
+											href="https://vannch.com"
+											className="btn btn-primary"
+											block
+										>
+											Visit Website
+											<i class="fas fa-arrow-circle-right ml-2"></i>
+										</a>
 									</Card.Body>
-								</Card>
+								</Jumbotron>
 								<Card className="portfolioCard ml-4">
-									<Card.Img variant="top" src={impact} />
-									<Card.Body>
-										<Card.Title>Card title</Card.Title>
-										<Card.Text>
-											This card has supporting text below as a natural lead-in
-											to additional content.
-										</Card.Text>
-									</Card.Body>
-								</Card>
-								<Card className="portfolioCard ml-4">
-									<Card.Img variant="top" src={udemy} />
+									<Card.Img variant="top" src={pfoto} />
 									<Card.Body>
 										<Card.Title>Card title</Card.Title>
 										<Card.Text>
 											This is a wider card with supporting text below as a
-											natural lead-in to additional content. This card has even
-											longer content than the first to show that equal height
-											action.
+											natural lead-in to additional content. This content is a
+											little bit longer.
 										</Card.Text>
+										<Button block>
+											Visit Website
+											<i class="fas fa-arrow-circle-right ml-2"></i>
+										</Button>
 									</Card.Body>
 								</Card>
-							</CardDeck>
+								<Card className="portfolioCard ml-4">
+									<Card.Img variant="top" src={pfoto} />
+									<Card.Body>
+										<Card.Title>Card title</Card.Title>
+										<Card.Text>
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</Card.Text>
+										<Button block>
+											Visit Website
+											<i class="fas fa-arrow-circle-right ml-2"></i>
+										</Button>
+									</Card.Body>
+								</Card>
+							</>
 						</div>
 					</Col>
 				</Row>
@@ -70,16 +93,10 @@ const Portfolio = () => {
 										lead-in to additional content. This content is a little bit
 										longer.
 									</Card.Text>
-								</Card.Body>
-							</Card>
-							<Card className="portfolioCard ml-4">
-								<Card.Img variant="top" src={progate} />
-								<Card.Body>
-									<Card.Title>Card title</Card.Title>
-									<Card.Text>
-										This card has supporting text below as a natural lead-in to
-										additional content.{" "}
-									</Card.Text>
+									<Button block>
+										Visit Website
+										<i class="fas fa-arrow-circle-right ml-2"></i>
+									</Button>
 								</Card.Body>
 							</Card>
 							<Card className="portfolioCard ml-4">
@@ -88,9 +105,28 @@ const Portfolio = () => {
 									<Card.Title>Card title</Card.Title>
 									<Card.Text>
 										This is a wider card with supporting text below as a natural
-										lead-in to additional content. This card has even longer
-										content than the first to show that equal height action.
+										lead-in to additional content. This content is a little bit
+										longer.
 									</Card.Text>
+									<Button block>
+										Visit Website
+										<i class="fas fa-arrow-circle-right ml-2"></i>
+									</Button>
+								</Card.Body>
+							</Card>
+							<Card className="portfolioCard ml-4">
+								<Card.Img variant="top" src={pfoto} />
+								<Card.Body>
+									<Card.Title>Card title</Card.Title>
+									<Card.Text>
+										This is a wider card with supporting text below as a natural
+										lead-in to additional content. This content is a little bit
+										longer.
+									</Card.Text>
+									<Button block>
+										Visit Website
+										<i class="fas fa-arrow-circle-right ml-2"></i>
+									</Button>
 								</Card.Body>
 							</Card>
 						</CardDeck>
