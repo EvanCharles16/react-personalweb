@@ -1,21 +1,21 @@
-import React from "react";
-import {
-	Container,
-	Row,
-	Col,
-	Card,
-	CardDeck,
-	Button,
-	Jumbotron,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Card, Button, Collapse } from "react-bootstrap";
 
 import Socialmedia from "../../components/Footer/Socialmedia";
-import pfoto from "../../img/6.png";
 import reactweb from "./../../img/portfolio/reactweb.png";
+import designx from "./../../img/portfolio/designx.png";
+import hybeast from "./../../img/portfolio/hybeast.png";
 
 import "./Portfolio.css";
 
 const Portfolio = () => {
+	const [open1, setOpen1] = useState(false);
+	const [open2, setOpen2] = useState(false);
+	const [open3, setOpen3] = useState(false);
+	const [open4, setOpen4] = useState(false);
+	const [open5, setOpen5] = useState(false);
+	const [open6, setOpen6] = useState(false);
+
 	return (
 		<div className="mb-4">
 			<Container>
@@ -23,115 +23,125 @@ const Portfolio = () => {
 					<h1>Portfolio</h1>
 				</div>
 
-				<Row className="mb-5">
-					<Col>
-						<div id="portfolio">
-							<>
-								<Jumbotron className="portfolioCard ml-4">
-									<Card.Img variant="top" src={reactweb} />
-									<Card.Body>
-										<Card.Title>Card title</Card.Title>
-										<Card.Text>
-											This is a wider card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</Card.Text>
-										<a
-											href="https://vannch.com"
-											className="btn btn-primary"
-											block
-										>
-											Visit Website
-											<i class="fas fa-arrow-circle-right ml-2"></i>
-										</a>
-									</Card.Body>
-								</Jumbotron>
-								<Card className="portfolioCard ml-4">
-									<Card.Img variant="top" src={pfoto} />
-									<Card.Body>
-										<Card.Title>Card title</Card.Title>
-										<Card.Text>
-											This is a wider card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</Card.Text>
-										<Button block>
-											Visit Website
-											<i class="fas fa-arrow-circle-right ml-2"></i>
-										</Button>
-									</Card.Body>
-								</Card>
-								<Card className="portfolioCard ml-4">
-									<Card.Img variant="top" src={pfoto} />
-									<Card.Body>
-										<Card.Title>Card title</Card.Title>
-										<Card.Text>
-											This is a wider card with supporting text below as a
-											natural lead-in to additional content. This content is a
-											little bit longer.
-										</Card.Text>
-										<Button block>
-											Visit Website
-											<i class="fas fa-arrow-circle-right ml-2"></i>
-										</Button>
-									</Card.Body>
-								</Card>
-							</>
-						</div>
-					</Col>
-				</Row>
+				<div id="portfolio">
+					<Row>
+						<Col md={4} sm={12}>
+							<Card className="portfolioCard mx-auto">
+								<Card.Img variant="top" src={designx} />
 
-				<Row className="pb-4">
-					<Col>
-						<CardDeck>
-							<Card className="portfolioCard ml-4">
-								<Card.Img variant="top" src={pfoto} />
 								<Card.Body>
-									<Card.Title>Card title</Card.Title>
-									<Card.Text>
-										This is a wider card with supporting text below as a natural
-										lead-in to additional content. This content is a little bit
-										longer.
-									</Card.Text>
-									<Button block>
-										Visit Website
-										<i class="fas fa-arrow-circle-right ml-2"></i>
+									<Button
+										onClick={() => setOpen2(!open2)}
+										aria-controls="example-collapse-text"
+										aria-expanded={open2}
+										block
+									>
+										Click for Details
+										<i class="fas fa-caret-down ml-2 detailButton"></i>
 									</Button>
+
+									<Collapse in={open2}>
+										<div id="example-collapse-text">
+											<Card.Body>
+												<Card.Title>DesignX #1</Card.Title>
+												<Card.Text>A Simple Responsive Web</Card.Text>
+
+												<Card.Title>Technologies</Card.Title>
+												<Card.Text>Pure HTML CSS</Card.Text>
+												<a
+													href="https://designx.netlify.app"
+													target="_blank"
+													className="btn btn-primary btn-block"
+												>
+													Visit Website
+													<i class="fas fa-arrow-circle-right ml-2"></i>
+												</a>
+											</Card.Body>
+										</div>
+									</Collapse>
 								</Card.Body>
 							</Card>
-							<Card className="portfolioCard ml-4">
-								<Card.Img variant="top" src={pfoto} />
+						</Col>
+
+						<Col md={4} sm={12}>
+							<Card className="portfolioCard mx-auto">
+								<Card.Img variant="top" src={hybeast} />
+
 								<Card.Body>
-									<Card.Title>Card title</Card.Title>
-									<Card.Text>
-										This is a wider card with supporting text below as a natural
-										lead-in to additional content. This content is a little bit
-										longer.
-									</Card.Text>
-									<Button block>
-										Visit Website
-										<i class="fas fa-arrow-circle-right ml-2"></i>
+									<Button
+										onClick={() => setOpen3(!open3)}
+										aria-controls="example-collapse-text"
+										aria-expanded={open3}
+										block
+									>
+										Click for Details
+										<i class="fas fa-caret-down ml-2 detailButton"></i>
 									</Button>
+
+									<Collapse in={open3}>
+										<div id="example-collapse-text">
+											<Card.Body>
+												<Card.Title>Hybeast #2</Card.Title>
+												<Card.Text>A Simple Responsive Web</Card.Text>
+
+												<Card.Title>Technologies</Card.Title>
+												<Card.Text>HTML CSS, SASS, Bootstrap</Card.Text>
+												<a
+													href="https://hybeastz.netlify.app"
+													target="_blank"
+													className="btn btn-primary btn-block"
+												>
+													Visit Website
+													<i class="fas fa-arrow-circle-right ml-2"></i>
+												</a>
+											</Card.Body>
+										</div>
+									</Collapse>
 								</Card.Body>
 							</Card>
-							<Card className="portfolioCard ml-4">
-								<Card.Img variant="top" src={pfoto} />
+						</Col>
+
+						<Col md={4} sm={12}>
+							<Card className="portfolioCard mx-auto">
+								<Card.Img variant="top" src={reactweb} />
+
 								<Card.Body>
-									<Card.Title>Card title</Card.Title>
-									<Card.Text>
-										This is a wider card with supporting text below as a natural
-										lead-in to additional content. This content is a little bit
-										longer.
-									</Card.Text>
-									<Button block>
-										Visit Website
-										<i class="fas fa-arrow-circle-right ml-2"></i>
+									<Button
+										onClick={() => setOpen1(!open1)}
+										aria-controls="example-collapse-text"
+										aria-expanded={open1}
+										block
+									>
+										Click for Details
+										<i class="fas fa-caret-down ml-2 detailButton"></i>
 									</Button>
+
+									<Collapse in={open1}>
+										<div id="example-collapse-text">
+											<Card.Body>
+												<Card.Title>Personal Website</Card.Title>
+												<Card.Text>A Simple Personal Web</Card.Text>
+
+												<Card.Title>Technologies</Card.Title>
+												<Card.Text>
+													ReactJS, Bootstrap, React Bootstrap
+												</Card.Text>
+												<a
+													href="https://vannch.com"
+													target="_blank"
+													className="btn btn-primary btn-block"
+												>
+													Visit Website
+													<i class="fas fa-arrow-circle-right ml-2"></i>
+												</a>
+											</Card.Body>
+										</div>
+									</Collapse>
 								</Card.Body>
 							</Card>
-						</CardDeck>
-					</Col>
-				</Row>
+						</Col>
+					</Row>
+				</div>
 			</Container>
 			<Socialmedia />
 		</div>

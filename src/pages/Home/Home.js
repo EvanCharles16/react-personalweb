@@ -51,7 +51,7 @@ class Content extends Component {
 					</Nav>
 
 					<div className="text-center mt-4">
-						<Link to="/contact" className="text-light ">
+						<a href="/contact/#contact" className="text-light ">
 							<Button
 								className="text-center homeButton"
 								variant="primary mt-3"
@@ -59,7 +59,7 @@ class Content extends Component {
 							>
 								Hire Me
 							</Button>
-						</Link>
+						</a>
 						<Link
 							to="/assets/CV.pdf"
 							target="blank"
