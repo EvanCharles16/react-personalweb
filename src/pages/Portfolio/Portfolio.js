@@ -5,6 +5,9 @@ import Socialmedia from "../../components/Footer/Socialmedia";
 import reactweb from "./../../img/portfolio/reactweb.png";
 import designx from "./../../img/portfolio/designx.png";
 import hybeast from "./../../img/portfolio/hybeast.png";
+import hybeastCatalog from './../../img/portfolio/hybeast-catalog.png'
+import evenity from './../../img/portfolio/evenity.png'
+import piggy from '../../img/portfolio/piggy.png'
 
 import "./Portfolio.css";
 
@@ -31,16 +34,16 @@ const Portfolio = () => {
 
 								<Card.Body>
 									<Button
-										onClick={() => setOpen2(!open2)}
+										onClick={() => setOpen1(!open1)}
 										aria-controls="example-collapse-text"
-										aria-expanded={open2}
+										aria-expanded={open1}
 										block
 									>
 										Click for Details
 										<i class="fas fa-caret-down ml-2 detailButton"></i>
 									</Button>
 
-									<Collapse in={open2}>
+									<Collapse in={open1}>
 										<div id="example-collapse-text">
 											<Card.Body>
 												<Card.Title>DesignX #1</Card.Title>
@@ -50,7 +53,7 @@ const Portfolio = () => {
 												<Card.Text>Pure HTML CSS</Card.Text>
 												<a
 													href="https://designx.netlify.app"
-													target="_blank"
+													target="blank"
 													className="btn btn-primary btn-block"
 												>
 													Visit Website
@@ -66,6 +69,44 @@ const Portfolio = () => {
 						<Col md={4} sm={12}>
 							<Card className="portfolioCard mx-auto">
 								<Card.Img variant="top" src={hybeast} />
+
+								<Card.Body>
+									<Button
+										onClick={() => setOpen2(!open2)}
+										aria-controls="example-collapse-text"
+										aria-expanded={open2}
+										block
+									>
+										Click for Details
+										<i class="fas fa-caret-down ml-2 detailButton"></i>
+									</Button>
+
+									<Collapse in={open2}>
+										<div id="example-collapse-text">
+											<Card.Body>
+												<Card.Title>Hybeast #2</Card.Title>
+												<Card.Text>A Simple Responsive Web</Card.Text>
+
+												<Card.Title>Technologies</Card.Title>
+												<Card.Text>HTML CSS, SASS, Bootstrap</Card.Text>
+												<a
+													href="https://hybeastz.netlify.app"
+													target="blank"
+													className="btn btn-primary btn-block"
+												>
+													Visit Website
+													<i class="fas fa-arrow-circle-right ml-2"></i>
+												</a>
+											</Card.Body>
+										</div>
+									</Collapse>
+								</Card.Body>
+							</Card>
+						</Col>
+
+						<Col md={4} sm={12}>
+							<Card className="portfolioCard mx-auto">
+								<Card.Img variant="top" src={reactweb} />
 
 								<Card.Body>
 									<Button
@@ -81,44 +122,6 @@ const Portfolio = () => {
 									<Collapse in={open3}>
 										<div id="example-collapse-text">
 											<Card.Body>
-												<Card.Title>Hybeast #2</Card.Title>
-												<Card.Text>A Simple Responsive Web</Card.Text>
-
-												<Card.Title>Technologies</Card.Title>
-												<Card.Text>HTML CSS, SASS, Bootstrap</Card.Text>
-												<a
-													href="https://hybeastz.netlify.app"
-													target="_blank"
-													className="btn btn-primary btn-block"
-												>
-													Visit Website
-													<i class="fas fa-arrow-circle-right ml-2"></i>
-												</a>
-											</Card.Body>
-										</div>
-									</Collapse>
-								</Card.Body>
-							</Card>
-						</Col>
-
-						<Col md={4} sm={12}>
-							<Card className="portfolioCard mx-auto">
-								<Card.Img variant="top" src={reactweb} />
-
-								<Card.Body>
-									<Button
-										onClick={() => setOpen1(!open1)}
-										aria-controls="example-collapse-text"
-										aria-expanded={open1}
-										block
-									>
-										Click for Details
-										<i class="fas fa-caret-down ml-2 detailButton"></i>
-									</Button>
-
-									<Collapse in={open1}>
-										<div id="example-collapse-text">
-											<Card.Body>
 												<Card.Title>Personal Website</Card.Title>
 												<Card.Text>A Simple Personal Web</Card.Text>
 
@@ -128,7 +131,7 @@ const Portfolio = () => {
 												</Card.Text>
 												<a
 													href="https://vannch.com"
-													target="_blank"
+													target="blank"
 													className="btn btn-primary btn-block"
 												>
 													Visit Website
@@ -142,14 +145,14 @@ const Portfolio = () => {
 						</Col>
 					</Row>
 
-					{/* <Row>
+					<Row className="mt-5 mb-5 ">
 						<Col md={4} sm={12}>
 							<Card className="portfolioCard mx-auto">
-								<Card.Img variant="top" src={designx} />
+								<Card.Img variant="top" src={hybeastCatalog} />
 
 								<Card.Body>
 									<Button
-										onClick={() => setOpen4(!open)}
+										onClick={() => setOpen4(!open4)}
 										aria-controls="example-collapse-text"
 										aria-expanded={open4}
 										block
@@ -161,14 +164,14 @@ const Portfolio = () => {
 									<Collapse in={open4}>
 										<div id="example-collapse-text">
 											<Card.Body>
-												<Card.Title>DesignX #1</Card.Title>
-												<Card.Text>A Simple Responsive Web</Card.Text>
+												<Card.Title>Hybeast-Catalog</Card.Title>
+												<Card.Text>A E-Commerce Catalog Website</Card.Text>
 
 												<Card.Title>Technologies</Card.Title>
-												<Card.Text>Pure HTML CSS</Card.Text>
+												<Card.Text>HTML, CSS, Javascript, Bootstrap</Card.Text>
 												<a
-													href="https://designx.netlify.app"
-													target="_blank"
+													href="https://hybeast-catalog.netlify.app/"
+													target="blank"
 													className="btn btn-primary btn-block"
 												>
 													Visit Website
@@ -183,7 +186,7 @@ const Portfolio = () => {
 
 						<Col md={4} sm={12}>
 							<Card className="portfolioCard mx-auto">
-								<Card.Img variant="top" src={hybeast} />
+								<Card.Img variant="top" src={evenity} />
 
 								<Card.Body>
 									<Button
@@ -199,14 +202,14 @@ const Portfolio = () => {
 									<Collapse in={open5}>
 										<div id="example-collapse-text">
 											<Card.Body>
-												<Card.Title>Hybeast #2</Card.Title>
-												<Card.Text>A Simple Responsive Web</Card.Text>
+												<Card.Title>Eventiy</Card.Title>
+												<Card.Text>A Event Management Website</Card.Text>
 
 												<Card.Title>Technologies</Card.Title>
-												<Card.Text>HTML CSS, SASS, Bootstrap</Card.Text>
+												<Card.Text>ReactJS, Bootstrap, NodeJS, ExpressJS, MySQL, AWS</Card.Text>
 												<a
-													href="https://hybeastz.netlify.app"
-													target="_blank"
+													href="https://evenity.asia/#/"
+													target="blank"
 													className="btn btn-primary btn-block"
 												>
 													Visit Website
@@ -221,7 +224,7 @@ const Portfolio = () => {
 
 						<Col md={4} sm={12}>
 							<Card className="portfolioCard mx-auto">
-								<Card.Img variant="top" src={reactweb} />
+								<Card.Img variant="top" src={piggy} />
 
 								<Card.Body>
 									<Button
@@ -237,16 +240,16 @@ const Portfolio = () => {
 									<Collapse in={open6}>
 										<div id="example-collapse-text">
 											<Card.Body>
-												<Card.Title>Personal Website</Card.Title>
-												<Card.Text>A Simple Personal Web</Card.Text>
+												<Card.Title>Pig-Dice-Game</Card.Title>
+												<Card.Text>Document Object Model</Card.Text>
 
 												<Card.Title>Technologies</Card.Title>
 												<Card.Text>
-													ReactJS, Bootstrap, React Bootstrap
+													HTML , CSS , Javascript , bootstrap
 												</Card.Text>
 												<a
-													href="https://vannch.com"
-													target="_blank"
+													href="https://piggy-dice.netlify.app/"
+													target="blank"
 													className="btn btn-primary btn-block"
 												>
 													Visit Website
@@ -258,7 +261,7 @@ const Portfolio = () => {
 								</Card.Body>
 							</Card>
 						</Col>
-					</Row> */}
+					</Row>
 				</div>
 			</Container>
 			<Socialmedia />

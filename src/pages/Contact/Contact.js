@@ -1,46 +1,33 @@
-import React, { Component } from "react";
-import { Container, Row, Col, ListGroup, Form, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Form, Button, Jumbotron } from "react-bootstrap";
 import Socialmedia from "../../components/Footer/Socialmedia";
-import Cv from "../../img/CV.png";
 
-class Contact extends Component {
-	render() {
-		return (
-			<div>
-				<Container>
-					<div className="mt-4 mb-4" id="getCV">
-						<img src={Cv} alt="CV" style={{ width: "100%" }} />
-					</div>
-					<Row>
-						<Col className="bordered border-right">
-							<Row>
-								<Col sm={12}>
-									<h2 className="contact-1 pt-4 mb-4">Quick Id</h2>
-								</Col>
-								<Col>
-									<div id="contact">
-										<ListGroup variant="flush">
-											<ListGroup.Item>Phone</ListGroup.Item>
-											<ListGroup.Item>Email</ListGroup.Item>
-											<ListGroup.Item>Website</ListGroup.Item>
-											<ListGroup.Item>Address</ListGroup.Item>
-										</ListGroup>
-									</div>
-								</Col>
+const Contact = () => {
+	const myStyle = {
+		marginTop: "8%",
+		marginBottom: "10%"
+	}
 
-								<Col>
-									<ListGroup variant="flush">
-										<ListGroup.Item>+628 956 274 36758</ListGroup.Item>
-										<ListGroup.Item>ec@vannch.com</ListGroup.Item>
-										<ListGroup.Item>vannch.com</ListGroup.Item>
-										<ListGroup.Item>Ruang Kreasi</ListGroup.Item>
-									</ListGroup>
-								</Col>
-							</Row>
-						</Col>
+	const buttonSubmit = {
+		padding: "10px 0",
+	}
 
+	const JumbotronContact = {
+		background: "#F8F9FA",
+		marginTop: "4rem",
+		padding: "0 15rem",
+		border: "1px solid #c4c4c4",
+		boxShadow: "2px 2px 2px -1px",
+		borderRadius: "5rem"
+	}
+
+	return (
+		<div>
+			<Container>
+				<Jumbotron style={JumbotronContact}>
+					<Row style={myStyle}>
 						<Col>
-							<h2 className="contact-2 m-4">Contact Me</h2>
+							<h2 className="contact-2 mb-4 pb-3 text-center">Contact Me</h2>
 							<Form action="mailto: ec@vannch.com" name="contact" method="post">
 								<input type="hidden" name="form-name" value="contact" />
 								<Form.Group>
@@ -68,19 +55,35 @@ class Contact extends Component {
 								<Button
 									variant="primary"
 									type="submit"
+									block
 									target="blank"
 									value="contact"
-									// href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=evan.chrls@yahoo.com&su=yoursubject&body=my-text&ui=2&tf=1&pli=1"
+									className="mt-4"
+									style={buttonSubmit}
 								>
 									Send
+									<i class="fas fa-arrow-right ml-3"></i>
+								</Button>
+								<h4 className="text-center mt-3	">OR</h4>
+								<Button
+									variant="danger"
+									block
+									target="blank"
+									style={buttonSubmit}
+									href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=evancharles1609@gmail.com&su=yoursubject&body=my-text&ui=2&tf=1&pli=1"
+								>
+									Send me Message via Gmail
+									<i class="fas fa-envelope ml-3"></i>
 								</Button>
 							</Form>
 						</Col>
+
+
 					</Row>
-				</Container>
-				<Socialmedia />
-			</div>
-		);
-	}
+				</Jumbotron>
+			</Container>
+			<Socialmedia />
+		</div>
+	);
 }
 export default Contact;
